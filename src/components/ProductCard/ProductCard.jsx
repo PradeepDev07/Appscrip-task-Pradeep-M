@@ -31,7 +31,7 @@ const ProductCard = ({ product }) => {
                     {isUserSignedIn ? (
                         <p className={style.price}>${price}</p>
                     ) : (
-                        <p className={style.price}><span><a href="/signin">Sign in</a></span> or create to see the price</p>
+                        <p className={style.price}><span><a href="/login">Sign in</a></span> or create to see the price</p>
                     )}
                     <button 
                         className={style['favorite-btn']} 
