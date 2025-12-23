@@ -149,6 +149,9 @@ const Shop = () => {
                             </span>
                             <h2>FILTER</h2>
                         </div>
+                        <div className={style['filter-bg']}>
+                               <h1>FILTER</h1>
+                        </div>
 
                         {showFilterDropdown && (
                             <div className={style['filter-dropdown']}>
@@ -161,7 +164,7 @@ const Shop = () => {
                             </div>
                         )}
                     </div>
-                    <div className={style.vl}></div>
+                    <div className={`${style.vl} ${style['hide-bg']}`}></div>
 
 
                     <div className={style['sort-dropdown-wrapper']}>

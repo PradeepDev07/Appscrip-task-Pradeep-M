@@ -27,8 +27,8 @@
 
 .products-container{
     display: grid;
-    /*smaller devices 2 columns bigger has 3 columns */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*smaller devices 2 columns and 4 on big */
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 1.5rem;
     padding: 1rem;
@@ -47,7 +47,7 @@
     padding-right: 2rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 720px) {
     .desktop-filter {
         display: block;
     }
@@ -56,7 +56,14 @@
         user-select: none;
         display: none;
     }
+    /*auto collum */
+    .products-container{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 
+}
+.filter-bg{
+    display: none;
 }
 .vl {
     border-left: 1px solid rgb(28, 28, 28); /* Defines the line: width, style, color */
@@ -181,3 +188,13 @@
     .filter-checkbox span {
         flex: 1;
     }
+
+@media (min-width: 1024px) {
+    .filter-bg{
+        display: block;
+        font-size: 14px;
+    }
+    .hide-bg{
+        display: none;
+    }
+}
