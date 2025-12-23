@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Simplon Norm';
+  src: url('/fonts/Simplon Norm.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'Simplon Norm', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+  --font-top-family: 'Simplon Norm', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-top-weight:400;
+  --color-top-text:#EB4C6B;
+  --color-top-bg-text: #000000;
+  --primary-color-background: #FFFFFF;
+  --primary-color-font:#252020;
+  --primary-fontfamily: 'Simplon Norm', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --secondary-fontfamily: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --logo-fontweight: 800;
+
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  font-family: var(--primary-fontfamily);
+  background-color: var(--primary-color-background);
+  color: var(--primary-color-font);
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+a {
+
+  color: inherit;
+}
+
+    .hide{
+        display: none;
+    }
+    .not-hide{
+        display: block;
+    }
+.pt{
+    padding-top: 10px;
+}
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
