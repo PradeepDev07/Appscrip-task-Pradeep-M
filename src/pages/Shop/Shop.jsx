@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { baseURL } from '../../config/url'
 import style from './shop.module.css'
-import ProductCard from '../../components/ProductCard/ProductCard'
+import ProductCard from '../../components/ProductCard/'
 import { useSearchParams } from 'react-router-dom'
 import Bottom from '../../components/Bottom/Bottom'
 import FilterContainer from '../../components/FilterContainer/FilterContainer'

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../../context/store'
 import style from './favoritePage.module.css'
-import ProductCard from '../../components/ProductCard/ProductCard'
+import ProductCard from '../../components/ProductCard'
 
 const FavoritePage = () => {
     const navigate = useNavigate()
